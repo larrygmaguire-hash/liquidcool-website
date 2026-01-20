@@ -4,13 +4,19 @@
     /* Brand colours from logo */
     --blue-light: #7BC8E8;
     --blue-mid: #4AAED9;
+    --blue-dark: #2B8BBF;
     --green-light: #8DC63F;
     --green-mid: #5BA146;
     --green-dark: #3D8B40;
 
+    /* Accent colour - blue */
+    --accent: var(--blue-mid);
+    --accent-dark: var(--blue-dark);
+    --accent-light: var(--blue-light);
+
     /* Gradients */
     --gradient-brand: linear-gradient(135deg, var(--blue-light) 0%, var(--green-light) 100%);
-    --gradient-cta: linear-gradient(135deg, var(--green-mid) 0%, var(--green-dark) 100%);
+    --gradient-cta: linear-gradient(135deg, var(--blue-mid) 0%, var(--blue-dark) 100%);
 
     /* Neutrals */
     --black: #1a1a1a;
@@ -111,17 +117,17 @@ h4 {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(93, 161, 70, 0.4);
+    box-shadow: 0 4px 12px rgba(74, 174, 217, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--green-mid);
-    border: 2px solid var(--green-mid);
+    color: var(--accent);
+    border: 2px solid var(--accent);
 }
 
 .btn-secondary:hover {
-    background: var(--green-mid);
+    background: var(--accent);
     color: var(--white);
 }
 
@@ -133,7 +139,7 @@ h4 {
 
 .btn-secondary-light:hover {
     background: var(--white);
-    color: var(--green-dark);
+    color: var(--accent-dark);
 }
 
 .btn-large {
@@ -142,13 +148,13 @@ h4 {
 }
 
 .link-arrow {
-    color: var(--green-mid);
+    color: var(--accent);
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .link-arrow:hover {
-    color: var(--green-dark);
+    color: var(--accent-dark);
 }
 
 /* Section Title */
@@ -193,7 +199,7 @@ h4 {
 }
 
 .nav-link:hover {
-    color: var(--green-mid);
+    color: var(--accent);
 }
 
 .mobile-menu-btn {
@@ -265,7 +271,7 @@ h4 {
 
 .value-icon {
     margin-bottom: 16px;
-    color: var(--green-light);
+    color: var(--accent-light);
 }
 
 .value-number {
@@ -398,7 +404,7 @@ h4 {
 }
 
 .trust-item svg {
-    color: var(--green-mid);
+    color: var(--accent);
     flex-shrink: 0;
 }
 
@@ -559,7 +565,7 @@ h4 {
 
 .cta-section .btn-primary {
     background: var(--white);
-    color: var(--green-dark);
+    color: var(--accent-dark);
 }
 
 .cta-section .btn-primary:hover {
@@ -601,7 +607,7 @@ h4 {
 
 .newsletter-form input:focus {
     outline: none;
-    border-color: var(--green-mid);
+    border-color: var(--accent);
 }
 
 .newsletter-privacy {
@@ -677,7 +683,7 @@ h4 {
 }
 
 .social-links a:hover {
-    color: var(--green-light);
+    color: var(--accent-light);
 }
 
 .copyright {
